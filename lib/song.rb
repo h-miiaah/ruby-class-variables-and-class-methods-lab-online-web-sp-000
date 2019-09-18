@@ -44,11 +44,11 @@ class Song
 
   def self.artist_count
     artist_count = {} # sets artist_count to an empty hash.
-    @@artists.each do |artist|
-      if artist_count[artist]
-        artist_count[artist] += 1
+    @@artists.each do |artist| # itereate through the @@artists array.
+      if artist_count[artist] # check if the artist already exists in the hash.
+        artist_count[artist] += 1 # if the artist exists in the hash, increment it's value by 1.
       else
-        artist_count[artist] = 1
+        artist_count[artist] = 1 # if it's a new artist set it's value to 1.
       end
     end
     artist_count # returns the artist_count hash.
