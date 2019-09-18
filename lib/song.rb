@@ -33,7 +33,7 @@ class Song
 
   # creates a class method .artists that returns an array of all the unique artists of existing songs.
   def self.artists
-    @@artists.uniq
+    @@artists.uniq!
   end
 
   def self.artist_count
