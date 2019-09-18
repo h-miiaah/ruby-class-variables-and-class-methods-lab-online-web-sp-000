@@ -15,10 +15,12 @@ class Song
     @@artists << artist # adds artist to @@artists array evey time a song is created.
   end
 
+  # creates a class method .count that returns the total number of songs created.
   def self.count
     @@count
   end
 
+  # creates a class method .genres that returns an array of all the unique genres of existing songs.
   def self.genres
     @@genres.uniq
   end
@@ -29,6 +31,7 @@ class Song
     return genre_count
   end
 
+  # creates a class method .artists that returns an array of all the unique artists of existing songs.
   def self.artists
     @@artists.uniq
   end
