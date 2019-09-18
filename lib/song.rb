@@ -28,7 +28,7 @@ class Song
   def self.genre_count
     genre_count = {} # sets genre_count to an empty hash.
     @@genres.each {|genre| genre_count[genre] += 1} # iterate through each genre in the @@genres array and increment it by 1.
-    return genre_count # retruns the genre_count hash.
+    genre_count # retruns the genre_count hash.
   end
 
   # creates a class method .artists that returns an array of all the unique artists of existing songs.
@@ -39,7 +39,7 @@ class Song
   def self.artist_count
     artist_count = {} # sets artist_count to an empty hash.
     @@artists.each {|artist| artist_count[artist] += 1} # iterate through each artist in the @@artists array and increment it by 1.
-    return artist_count # returns the artist_count hash.
+    artist_count # returns the artist_count hash.
   end
 
 end
