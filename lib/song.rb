@@ -10,9 +10,9 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    @@count += 1
-    @@genres << genre
-    @@artists << artist
+    @@count += 1 # increments @@count by 1 every time a song is created.
+    @@genres << genre # adds genre to @@genres array evey time a song is created.
+    @@artists << artist # adds artist to @@artists array evey time a song is created.
   end
 
   def self.count
