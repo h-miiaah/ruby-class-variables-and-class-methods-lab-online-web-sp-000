@@ -27,11 +27,11 @@ class Song
 
   def self.genre_count
     genre_count = {} # sets genre_count to an empty hash.
-    @@genres.each do |genre|
-      if genre_count[genre]
-        genre_count[genre] += 1
+    @@genres.each do |genre| # itereate through the @@genres array.
+      if genre_count[genre] # check if the genre already exists in the hash.
+        genre_count[genre] += 1 # if the genre exists in the hash, increment it's value by 1.
       else
-        genre_count[genre] = 1
+        genre_count[genre] = 1 # if it's a new genre set it's value to 1.
       end
     end
     genre_count # retruns the genre_count hash.
@@ -44,7 +44,13 @@ class Song
 
   def self.artist_count
     artist_count = {} # sets artist_count to an empty hash.
-    @@artists.each {|artist| artist_count[artist] += 1} # iterate through each artist in the @@artists array and increment it by 1.
+    @@artists.each do |artist|
+      if artist_count[artist]
+        artist_count[artist] += 1
+      else
+        artist_count[artist] = 1
+      end
+    end
     artist_count # returns the artist_count hash.
   end
 
