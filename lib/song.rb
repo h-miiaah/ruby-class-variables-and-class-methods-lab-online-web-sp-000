@@ -22,7 +22,7 @@ class Song
 
   # creates a class method .genres that returns an array of all the unique genres of existing songs.
   def self.genres
-    @@genres.uniq
+    @@genres.uniq!
   end
 
   def self.genre_count
